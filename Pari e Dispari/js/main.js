@@ -1,6 +1,7 @@
 // TODO L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 //* chiedo all'utente di scegliere Pari o Dispari con un prompt e salvo il tutto nel let userChoice, che stampo in console
 let userChoice = prompt("Seleziona Pari o Dispari");
+userChoice = userChoice.toLowerCase(); // converte in minuscolo per evitare errori futuri di battitura
 console.log(userChoice);
 
 //*chiedo all'utente di scegliere un numero da 1 a 5 con un prompt e salvo il tutto nel let userNumber, che stampo in console
@@ -36,6 +37,6 @@ if (userChoice === "pari" && (somma % 2 === 0) ) {
     alert("La somma " + somma + " è dispari! Hai perso") 
     console.log("Hai perso")
 }
-else console.log ("Errore!") // ! personal debug
-alert("Hai sbagliato qualcosa!")
+/* else console.log ("Errore!")
+alert("Hai sbagliato qualcosa!") */
 
