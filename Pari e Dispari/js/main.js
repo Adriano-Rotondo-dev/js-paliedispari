@@ -10,10 +10,10 @@ console.log(userNumber);
 // * Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 function botRNG() {
   let rng = Math.floor(Math.random() * 5) + 1;
-  console.log(rng);
   return rng;
 }
 let botNumber = botRNG(); // salvo la funzione in una variabile
+console.log(botNumber); // stampo il numero generato dalla funzione in console
 
 // * Sommiamo i due numeri
 // * Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione).
@@ -34,5 +34,7 @@ if (userChoice === "pari" && somma % 2 === 0) {
   alert("La somma " + somma + " è dispari! Hai perso");
   console.log("Hai perso");
 }
+/* debug personale
 else console.log ("Errore!") 
 alert("Hai sbagliato qualcosa! Ricarica la pagina e riprova!") 
+*/
