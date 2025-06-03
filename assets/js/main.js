@@ -8,17 +8,17 @@ console.log(userWord)
 //* creo una funzione che legga al contrario la parola inserita , la salvo in una variabile e stampo in console il risultato
 function palindroma() {   
     let reverseWord = "";
-    for (let i= userWord.length - 1; i >= 0; i --) {
-        const thisLetter = userWord[i];
-        console.log (thisLetter);
-        reverseWord = reverseWord + userWord[i];
+    for (let i= userWord.length - 1; i >= 0; i --) { //ciclo all'interno della parola al contrario
+        const thisLetter = userWord[i]; 
+        console.log (thisLetter); // stampo le lettere ciclate
+        reverseWord = reverseWord + userWord[i]; //unisco le lettere ciclate nella variabile reverseWord
     }
-    return reverseWord
+    return reverseWord 
 }
-let palindromaCheck = palindroma()
-console.log(palindroma(userWord))
+let palindromaCheck = palindroma() //salvo la funzione in una variabile da richiamare
+console.log(palindroma(userWord)) // stampo la funzione applicata al prompt iniziale
 
-if(userWord === palindromaCheck) {
+if(userWord === palindromaCheck) { //messaggio di alert una volta applicata la funzione
     alert("La parola " + userWord + " è palindroma.")
 } else {
     alert("La parola " + userWord + " non è palindroma.")
