@@ -34,5 +34,5 @@ if (userChoice === "pari" && somma % 2 === 0) {
   alert("La somma " + somma + " è dispari! Hai perso");
   console.log("Hai perso");
 }
-/* else console.log ("Errore!")
-alert("Hai sbagliato qualcosa!") */
+else console.log ("Errore!") 
+alert("Hai sbagliato qualcosa! Ricarica la pagina e riprova!") 
